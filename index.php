@@ -32,10 +32,15 @@
       <h2>Cart</h2>
       <p>Orders:</p>
       <div class="cart-item">
-        <p class="cart-name">Hello</p>
-        Quantity
-        <input type="number" name="quantity" min="1" max="100" value="1">
-      </div>
+        <img src="img/noimage.jpg">
+        <div class="cart-data">
+            <h3 class="cart-name">Hello</h3>
+            <input  class="cart-qunatity" type="number" name="quantity" min="1" max="100" value="1">
+            <button class="cart-remove">Remove</button>
+        </div>
+    
+       </div>
+       <hr>
     </div>
   </div>
 
