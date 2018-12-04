@@ -1,0 +1,96 @@
+{  
+    
+    "Espresso":[  
+       {  
+          "id":1,
+          "name":"Capuccino",
+          "price":5.00,
+          "image":"noimage.jpg",
+          "description":"an espresso-based coffee drink that originated in Italy, and is traditionally prepared with double espresso and steamed milk foam. Variations of the drink involve the use of cream instead of milk, and flavoring with cinnamon or chocolate powder."
+       },
+       {  
+          "id":2,
+          "name":"Cafe Latte",
+          "price":4.20,
+          "image":"noimage.jpg",
+          "description":"a coffee drink made with espresso and steamed milk. The term as used in English is a shortened form of the Italian caffè latte, caffelatte or caffellatte, which means 'milk coffee'."
+       },
+       {  
+          "id":3,
+          "name":"Americano",
+          "price":3.50,
+          "image":"noimage.jpg",
+          "description":"a coffee drink prepared by diluting an espresso with hot water, giving it a similar strength to, but different flavor from traditionally brewed coffee. The strength of an Americano varies with the number of shots of espresso and the amount of water added."
+       }
+    ],
+    "Iced":[  
+       {  
+          "id":1,
+          "name":"Iced Coffee Latte",
+          "price":5.00,
+          "image":"noimage.jpg",
+          "description":"A latte is a coffee drink made with espresso and steamed milk. The term as used in English is a shortened form of the Italian caffè latte, caffelatte or caffellatte, which means 'milk coffee'."
+       },
+       {  
+          "id":2,
+          "name":"Iced Mocha",
+          "price":4.00,
+          "image":"noimage.jpg",
+          "description":"Espresso combined with bittersweet mocha sauce and milk over ice."
+       },
+       {  
+          "id":3,
+          "name":"Iced Frappe",
+          "price":3.00,
+          "image":"noimage.jpg",
+          "description":"In a blender, puree coffee, milk, sugar, and ice. "
+       }
+    ],
+    "Sandwiches":[  
+       {  
+          "id":1,
+          "name":"Omelette Sandwich",
+          "price":6.00,
+          "image":"noimage.jpg",
+          "description":"consisting of at least ham, onion, green pepper, and scrambled eggs"
+       },
+       {  
+          "id":2,
+          "name":"Burrito",
+          "price":10.20,
+          "image":"noimage.jpg",
+          "description":" a dish in Mexican and Tex-Mex cuisine that consists of a flour tortilla with various other ingredients."
+       },
+       {  
+          "id":3,
+          "name":"Burger",
+          "price":12.00,
+          "image":"noimage.jpg",
+          "description":"a sandwich consisting of one or more cooked patties of ground meat"
+       }
+    ],
+    "Others":[  
+       {  
+          "id":1,
+          "name":"Mineral Water",
+          "price":2.00,
+          "image":"noimage.jpg",
+          "description":"Plain mineral water. Nothing fancy!"
+       },
+       {  
+          "id":2,
+          "name":"Strawberry Smoothie",
+          "price":8.00,
+          "image":"noimage.jpg",
+          "description":"A cold strawberry drink."
+       },
+       {  
+          "id":3,
+          "name":"Milk Shake",
+          "price":8.50,
+          "image":"noimage.jpg",
+          "description":"Milk shake.Shaken not stirred!"
+       }
+    ]
+    
+ }
