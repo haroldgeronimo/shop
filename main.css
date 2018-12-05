@@ -36,7 +36,20 @@ button,input[type="submit"]{
   cursor: pointer;
     font-size: 16px;
 }
-input{
+a.button{
+  background-color: rgb(175, 157, 76); 
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  margin:3px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  
+  cursor: pointer;
+  font-size: 16px;
+}
+input,select{
   background-color: rgb(255, 255, 255); 
     border: solid 2px rgb(175, 157, 76); 
     color: rgb(0, 0, 0);
@@ -72,18 +85,21 @@ input{
 #clear:hover{
   background-color: rgb(219, 44, 44); 
 }
-#checkoutForm{
+#smallForm{
   position: relative;
   background-color: rgb(228, 228, 228);
   padding:10px 10px;
+  margin:20px;
   width:100%; 
   min-height:300px;
+  border-radius:10px;
 }
 #formCheck{
   background-color:white;
   position: relative;
   margin:0 auto;
-  width:500px;
+  width:700px;
+  padding:20px;
   min-height:500px;
 }
 .cart-remove{
@@ -223,6 +239,45 @@ input{
 .cart-name{
   margin:0px;
   font-size:12pt;
+}
+.footnote{
+  position:absolute;
+  right:2px;
+  bottom:2px;
+  font-size:8pt; 
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  text-align: left;
+  padding: 8px;
+}
+ td.currency {
+  text-align: right;
+  padding: 8px;
+}
+
+tr:nth-child(even){background-color: #f2f2f2}
+
+th {
+  background-color: rgb(204, 167, 0); 
+  color: white;
+}
+.currency-holder{
+  text-align: right;
+  font-size:12pt;
+  padding-right:13px;
+}
+.currency-text{
+  margin-left:18px;
+  font-weight: bold;
+}
+.price-total{
+  
+  font-size:17pt;
 }
 @media only screen and (max-width:620px) {
   .menu, .main, .right {
