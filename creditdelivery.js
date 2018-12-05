@@ -1,3 +1,4 @@
+"use strict";
 window.addEventListener("load", function(){
   document.getElementById("subButton").addEventListener("click", runSubmit);
   document.getElementById("cardHolder").addEventListener("input", validateName);
@@ -37,7 +38,7 @@ function validateName() {
 
 
 function validateCredit() {
-  var creditCard = document.forms.credit.elements.company[0];
+    var creditCard = document.forms.deliverycredit.elements.company[0];
   if (creditCard.validity.valueMissing) {
     creditCard.setCustomValidity("Select your credit card");
   } else {
@@ -71,4 +72,29 @@ function validateCVC() {
   } else {
     cardCVC.setCustomValidity("");
   }
+}
+
+function sumDigits(numStr) {
+  var digitTotal = 0;
+  for (var i = 0; i < numStr.length; i++) {
+    digitTotal += parseInt(numStr.charAt(i));
+  }
+  return digitTotal;
+}
+
+function luhn(idNum) {
+  var string1 = "";
+  var string2 = "";
+
+  // Retrieve the odd-numbered digits
+  for (var i = idNum.length - 1; i >= 0; i -= 2) {
+    string1 += idNum.charAt(i);
+  }
+  // Retrieve the even-numbered digits and double them
+  for (var i = idNum.length - 2; i >= 0; i -= 2) {
+    string2 += 2 * idNum.charAt(i);
+  }
+
+  // Return whether the sum of the digits is divisible by 10
+  return sumDigits(string1 + string2) % 10 === 0;
 }

@@ -122,20 +122,20 @@
                                <input name="cardHolder" id="cardHolder" required type="text" />              
                    
                                <fieldset id="cards">
-                                  <label>Credit Company*</label>
-                                  <label>
+                                  <label class="cardLabel">Credit Company*</label>
+                                  <label class="cardLabel">
                                      <input name="company" value="amex" type="radio" required />
                                      <img src="co_amex.png" alt="American Express" />
                                   </label>
-                                  <label>               
+                                  <label class="cardLabel">               
                                      <input name="company" value="discover" type="radio" />
                                      <img src="co_discover.png" alt="Discover" />
                                   </label>
-                                  <label>                  
+                                  <label class="cardLabel">                  
                                      <input name="company" value="master" type="radio"  />
                                      <img src="co_master.png" alt="MasterCard" />
                                   </label>
-                                  <label >                  
+                                  <label class="cardLabel">                  
                                      <input name="company" value="visa" type="radio"  />
                                      <img src="co_visa.png" alt="Visa" />
                                   </label>
@@ -143,7 +143,7 @@
                    
                                <label for="cardNumber">Credit Card Number*</label>
                                <input name="cardNumber" id="cardNumber" required type="text"
-                                      pattern="^(?:4[0-9]{12}(?:[0-9]{3})?|5[1-5][0-9]{14}|6(?:011|5[0-9][0-9])[0-9]{12}|3[47][0-9]{13}|3(?:0[0-5]|[68][0-9])[0-9]{11}|(?:2131|1800|35\d{3})\d{11})$"/>
+                               pattern="^(?:4[0-9]{12}(?:[0-9]{3})?|5[1-5][0-9]{14}|6(?:011|5[0-9][0-9])[0-9]{12}|3[47][0-9]{13}|3(?:0[0-5]|[68][0-9])[0-9]{11}|(?:2131|1800|35\d{3})\d{11})$" />
                    
                                <label for="expDate">Expiration Date*</label>
                                <input name="expDate" id="expDate" required type="text" placeholder="mm/yyyy" />
@@ -153,7 +153,7 @@
                             </fieldset>
                    
                             <p id="footnote">* - Required Item</p>        
-                            <input type="submit" id="subButton" value="Submit" />         
+                            <input type="submit" id="subButton" value="Submit Payment" />         
                          </form>
                 </div>
                 
