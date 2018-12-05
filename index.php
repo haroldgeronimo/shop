@@ -4,7 +4,7 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="main.css">
-  
+
   <script src="main.js" async></script>
 
 </head>
@@ -21,26 +21,27 @@
 
     <div class="main">
       <h2 id="category-title"> </h2>
-        <div id="category">
-            
-        </div>
-        
+      <div id="category">
+
+      </div>
+
     </div>
 
 
     <div class="cart">
       <h2>Cart</h2>
       <p>Orders:</p>
-      <div class="cart-item">
-        <img src="img/noimage.jpg">
-        <div class="cart-data">
-            <h3 class="cart-name">Hello</h3>
-            <input  class="cart-qunatity" type="number" name="quantity" min="1" max="100" value="1">
-            <button class="cart-remove">Remove</button>
-        </div>
-    
-       </div>
-       <hr>
+      <button id="clear">Clear All</button>
+      <form id="myCart" name="cart" method="get" action="checkout.php" onsubmit="return isValidForm();" >
+      <div id="cartItems">
+      </div>
+      <hr>
+      <div id="summary">
+        <h3><b>Total:</b><span id="total">$0.00</span></h3>
+      </div>
+      <hr>
+      <input type="submit" value="CHECKOUT"/>
+      </form>
     </div>
   </div>
 

@@ -23,6 +23,30 @@ h3{
 p{
   font-size:10pt;
 }
+button,input[type="submit"]{
+  background-color: rgb(175, 157, 76); 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    margin:3px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    
+  cursor: pointer;
+    font-size: 16px;
+}
+input{
+  background-color: rgb(255, 255, 255); 
+    border: solid 2px rgb(175, 157, 76); 
+    color: rgb(0, 0, 0);
+    padding: 5px 2px;
+    margin:3px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
 #storeName{
   font-family: 'Pacifico', cursive;
   font-size: 3em;
@@ -30,9 +54,57 @@ p{
   color:white;
   text-align:center;
 }
+#category-title{
+  transition: 0.35s;
+}
+#clear{
+  background-color: rgb(175, 76, 76); 
+  border: none;
+  color: white;
+  padding: 10px 10px;
+  margin:3px;
+  margin-left:70%; 
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  transition:0.25s;
+}
+#clear:hover{
+  background-color: rgb(219, 44, 44); 
+}
+#checkoutForm{
+  position: relative;
+  background-color: rgb(228, 228, 228);
+  padding:10px 10px;
+  width:100%; 
+  min-height:300px;
+}
+#formCheck{
+  background-color:white;
+  position: relative;
+  margin:0 auto;
+  width:500px;
+  min-height:500px;
+}
+.cart-remove{
+  background-color: rgb(175, 76, 76); 
+  border: none;
+  color: white;
+  padding: 10px 10px;
+  margin:3px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  transition:0.25s;
+}
+.cart-remove:hover{
+  
+  background-color: rgb(219, 44, 44); 
+}
 .header{
   background-image: url("img/cafe.png");
   background-repeat: no-repeat;
+  background-size: 100%;
   background-attachment: fixed;
   background-position: center; 
   
@@ -60,11 +132,23 @@ p{
   display:block;
   width:100%;
   color:black;
+  cursor: pointer;
+  transition:0.25s;
+}
+.menu a:hover{
+  color:#e5e5e5;
+  background-color:rgb(92, 86, 75);
 }
 .main {
   float:left;
   width:55%;
   padding:0 20px;
+  
+}
+.main-checkout {
+  width:80%;
+  position: relative;
+  margin:0 auto;
   
 }
 .cart {
@@ -76,12 +160,21 @@ p{
 }
 .item{
   width:200px;
-  height:300px;
+  min-height:300px;
   padding:10px;
   margin:10px;
+  position:relative;
   float:left;
   background-color:#ffdead;
+  cursor: pointer;
+  transition:0.35s;
 }
+.item:hover{
+  
+  transform:scale(1.05,1.05);
+  box-shadow: 1px 1px 5px grey;
+}
+
 .item img{
   display:block;
   width:180px;
@@ -100,17 +193,19 @@ p{
   font-size:9pt;
 }
 .item strong{
-  bottom:2px;
-  margin-top:5px;
-  margin-bottom:5px;
+  position:absolute;
+  right:2px;
+  top:2px;
+  padding:7px;
   font-size:15pt;
-  float:right;
+  background-color:#ffdead;
+  border-radius: 5px;
 }
 .cart-item{
   display:inline-block;
-  
+  position: relative;
   height:80px;
-  width:100%;
+  padding-left:20px;
 }
 .cart-data{
   height:100%;
@@ -127,6 +222,7 @@ p{
 }
 .cart-name{
   margin:0px;
+  font-size:12pt;
 }
 @media only screen and (max-width:620px) {
   .menu, .main, .right {
