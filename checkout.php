@@ -38,7 +38,7 @@
                               <legend><h3>Delivery address</h3></legend>
                               <label for="mailing-address-1" >Street address 1*</label>
                               <input id="mailing-address-1" name="mailing-address-1" type="text" required>
-                          
+                                <br>
                               <label for="mailing-address-2">Street address 2</label>
                               <input id="mailing-address-2" name="mailing-address-2" type="text">
                           
