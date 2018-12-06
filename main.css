@@ -88,7 +88,6 @@ input,select,textarea{
         margin-right: -50%;
         transform: translate(-50%, -50%);
         transition:0.20s;
-        text-shadow: 0 0 15px rgb(255, 251, 190);
 }
 #circlebutton i{
     padding-top:18px;
@@ -99,6 +98,7 @@ input,select,textarea{
   
   background-color:rgb(70, 70, 70);
   color:rgb(255, 255, 255);
+  text-shadow: 0 0 15px rgb(255, 251, 190);
 }
 #storeName{
   font-family: 'Pacifico', cursive;
