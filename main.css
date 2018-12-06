@@ -3,6 +3,9 @@
 * {
   box-sizing: border-box;
 }
+html {
+  scroll-behavior: smooth;
+}
 body{
   font-family: 'Rubik', sans-serif;
   color:black;
@@ -22,6 +25,9 @@ h3{
 }
 p{
   font-size:10pt;
+}
+a{
+  color:black;
 }
 button,input[type="submit"]{
   background-color: rgb(175, 157, 76); 
@@ -49,16 +55,50 @@ a.button{
   cursor: pointer;
   font-size: 16px;
 }
-input,select{
+input,select,textarea{
   background-color: rgb(255, 255, 255); 
     border: solid 2px rgb(175, 157, 76); 
     color: rgb(0, 0, 0);
     padding: 5px 2px;
     margin:3px;
-    text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
+}
+#tagline{
+  font-family: 'Quicksand', sans-serif;
+  font-size: 2em;
+  color:white;
+  text-align:center;
+  font-weight:bold;
+  
+  text-shadow: 0 0 15px rgb(0, 0, 0);
+}
+#circlebutton{
+  width:100px;
+  height:100px;
+  margin:0 auto;
+  text-align:center;
+  font-size: 3em;
+  background-color:rgb(226, 226, 226);
+  border-radius: 50px;
+  position: absolute;
+        bottom: 8px;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%);
+        transition:0.20s;
+        text-shadow: 0 0 15px rgb(255, 251, 190);
+}
+#circlebutton i{
+    padding-top:18px;
+    text-align:center;
+    font-size: 50pt;
+}
+#circlebutton:hover{
+  
+  background-color:rgb(70, 70, 70);
+  color:rgb(255, 255, 255);
 }
 #storeName{
   font-family: 'Pacifico', cursive;
@@ -66,6 +106,17 @@ input,select{
   text-shadow: 0 0 15px rgb(0, 0, 0);
   color:white;
   text-align:center;
+}
+
+#storeName-bg{
+  font-family: 'Pacifico', cursive;
+  font-size: 5em;
+  text-shadow: 0 0 15px rgb(0, 0, 0);
+  margin-top:10%;
+  margin-bottom:0px;
+  color:white;
+  text-align: center;
+  vertical-align: middle; 
 }
 #category-title{
   transition: 0.35s;
@@ -117,12 +168,17 @@ input,select{
   
   background-color: rgb(219, 44, 44); 
 }
+.header-bg{
+  display: flex;
+  flex-flow: column;
+  height: 100vh;
+}
 .header{
   background-image: url("img/cafe.png");
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
   background-attachment: fixed;
-  background-position: center; 
+  background-position: center center; 
   
   padding:50px;
 }
@@ -131,7 +187,6 @@ input,select{
  color:white;
  text-align:center;
  padding:10px;
- margin-top:7px;
 }
 .wrapper{
   overflow:auto;
@@ -154,6 +209,7 @@ input,select{
 .menu a:hover{
   color:#e5e5e5;
   background-color:rgb(92, 86, 75);
+  text-shadow: 0 0 15px rgb(255, 251, 190);
 }
 .main {
   float:left;
@@ -279,8 +335,121 @@ th {
   
   font-size:17pt;
 }
+.nav{
+background-color:black;
+width: 100%;
+height: 50px;
+}
+.navlinks{
+  text-align: center;
+}
+.navlinks ul{
+  list-style-type: none;
+  margin:0 auto;
+  overflow: hidden;
+  display: inline-block;
+}
+.navlinks li{
+float:left;
+border-right: 1px solid #bbb;
+
+}
+.navlinks li:first-child{
+  
+border-left: 1px solid #bbb;
+}
+
+
+.navlinks li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 15px 50px;
+  text-decoration: none;
+  transition:0.25s;
+}
+
+.navlinks li a:hover{
+  background-color: rgb(175, 157, 76); 
+  text-shadow: 0 0 10px rgb(255, 251, 190);
+  color:white;
+}
+.navlinks .active{
+  
+  color:#e5e5e5;
+  background-color:rgb(92, 86, 75);
+}
+
+.container{
+  width:900px;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color:white;
+  margin:0 auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.disable{
+  background-color:rgb(214, 214, 214);
+}
+.rounded{
+  border-radius: 5px;
+}
+.display-img{
+  width:100%;
+  height:auto;
+}
+.display-left{
+  width:40%;
+  height:auto;
+  margin:8px;
+  float:left;
+}
+.display-right{
+  width:40%;
+  height:auto;
+  margin:8px;
+  float:right;
+}
+.display-clear{
+  clear: both;
+}
+.shadowed{
+  box-shadow: 1px 1px 5px grey;
+}
+
+.container-whole{
+  width:100%;
+  min-height: 50px;
+  padding: 20px;
+  padding-bottom: 20px;
+  background-color:white;
+  
+  display: inline-block;
+  margin:0 auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.container-whole div:last-child{
+  
+border-left: 1px solid #bbb;
+}
+.split{
+  width:50%;
+  padding:20px;
+  float:left;
+  height: 100%;
+  background-color:white;
+}
+.contact{
+  margin-left:7px;
+}
+/*
 @media only screen and (max-width:620px) {
   .menu, .main, .right {
     width:100%;
   }
 }
+*/

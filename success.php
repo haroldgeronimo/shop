@@ -5,8 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="main.css">
 
-    <script src="checkout.js" async></script>
-    <script src="creditdelivery.js" async></script>
 
 </head>
 
