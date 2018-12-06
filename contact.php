@@ -41,7 +41,7 @@
             </div>
             <div class="split">
                 <h3>Send us a message!</h3>
-                <form action="index.php">
+                <form action="log/messageHandler.php">
                     
                 <label for="name">Name:</label><br>
                 <input type="text" name="name" id="name" required><br>

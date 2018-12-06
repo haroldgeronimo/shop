@@ -125,19 +125,19 @@
                                   <label class="cardLabel">Credit Company*</label>
                                   <label class="cardLabel">
                                      <input name="company" value="amex" type="radio" required />
-                                     <img src="co_amex.png" alt="American Express" />
+                                     <img src="img/amex.png" alt="American Express" />
                                   </label>
                                   <label class="cardLabel">               
                                      <input name="company" value="discover" type="radio" />
-                                     <img src="co_discover.png" alt="Discover" />
+                                     <img src="img/discover.png" alt="Discover" />
                                   </label>
                                   <label class="cardLabel">                  
                                      <input name="company" value="master" type="radio"  />
-                                     <img src="co_master.png" alt="MasterCard" />
+                                     <img src="img/master.png" alt="MasterCard" />
                                   </label>
                                   <label class="cardLabel">                  
                                      <input name="company" value="visa" type="radio"  />
-                                     <img src="co_visa.png" alt="Visa" />
+                                     <img src="img/visa.png" alt="Visa" />
                                   </label>
                                </fieldset>          
                    
